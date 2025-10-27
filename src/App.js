@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ImageIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ArtGalleryApp() {
   const [selected, setSelected] = useState(null);
@@ -9,57 +10,71 @@ export default function ArtGalleryApp() {
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/1.PNG",
+      image: process.env.PUBLIC_URL + "/art/1.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/2.PNG",
+      image: process.env.PUBLIC_URL + "/art/2.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/3.PNG",
+      image: process.env.PUBLIC_URL + "/art/3.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/4.PNG",
+      image: process.env.PUBLIC_URL + "/art/4.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/5.PNG",
+      image: process.env.PUBLIC_URL + "/art/5.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/6.PNG",
+      image: process.env.PUBLIC_URL + "/art/6.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/7.PNG",
+      image: process.env.PUBLIC_URL + "/art/7.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/8.PNG",
+      image: process.env.PUBLIC_URL + "/art/8.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/9.PNG",
+      image: process.env.PUBLIC_URL + "/art/9.PNG",
     },
     {
       title: "Ethereal Skies",
       description: "A dreamy blend of pastel clouds and starlight.",
-      image: "art/10.PNG",
+      image: process.env.PUBLIC_URL + "/art/10.PNG",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-900 text-white flex flex-col items-center p-6">
+    <div className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-100 text-white flex flex-col items-center p-6">
+      <header className="w-full flex justify-between items-center p-4 border-b border-zinc-800">
+        <h1 className="text-xl font-bold">Hunter Brooks Art</h1>
+        <nav className="flex gap-4 text-zinc-400">
+          <a href="gallery" className="hover:text-white">
+            Gallery
+          </a>
+          <a href="about" className="hover:text-white">
+            About
+          </a>
+          <a href="contact" className="hover:text-white">
+            Contact
+          </a>
+        </nav>
+      </header>
       <motion.h1
         className="text-4xl font-bold mb-8 text-center"
         initial={{ opacity: 0, y: -20 }}
