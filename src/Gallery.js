@@ -71,7 +71,7 @@ export default function Gallery() {
             <div className="overflow-hidden bg-zinc-800 cursor-pointer hover:shadow-xl transition-all rounded-2xl">
               <div className="p-0">
                 <img
-                  src={process.env.PUBLIC_URL + art.image}
+                  src={art.image}
                   alt={art.title}
                   className="w-full h-64 object-cover"
                 />
