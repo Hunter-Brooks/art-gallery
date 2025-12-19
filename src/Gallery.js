@@ -7,7 +7,7 @@ export default function Gallery() {
   const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + "/art.json")
+    fetch(process.env.PUBLIC_URL + "/art/art.json")
       .then((response) => response.json())
       .then((data) => setArtworks(data))
       .catch((error) => console.error("Error loading artworks:", error));
@@ -70,7 +70,6 @@ export default function Gallery() {
           >
             <div className="overflow-hidden bg-zinc-800 cursor-pointer hover:shadow-xl transition-all rounded-2xl">
               <div className="p-0">
-                {console.log("IMAGE PATH:", art.image)}
                 <img
                   src={art.image}
                   alt={art.title}
