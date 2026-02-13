@@ -94,12 +94,20 @@ export default function Gallery() {
             className="bg-zinc-900 rounded-2xl p-6 max-w-3xl w-full shadow-lg relative"
           >
             <img
-              src={currentArtwork ? process.env.PUBLIC_URL + currentArtwork.image : ""}
+              src={
+                currentArtwork
+                  ? process.env.PUBLIC_URL + currentArtwork.image
+                  : ""
+              }
               alt={currentArtwork ? currentArtwork.title : ""}
               className="w-full h-[70vh] object-contain rounded-xl mb-4"
             />
-            <h2 className="text-2xl font-semibold mb-2">{currentArtwork ? currentArtwork.title : ""}</h2>
-            <p className="text-zinc-400 mb-4">{currentArtwork ? currentArtwork.description : ""}</p>
+            <h2 className="text-2xl font-semibold mb-2">
+              {currentArtwork ? currentArtwork.title : ""}
+            </h2>
+            <p className="text-zinc-400 mb-4">
+              {currentArtwork ? currentArtwork.description : ""}
+            </p>
             <button
               onClick={() => setSelected(null)}
               className="mt-2 bg-zinc-700 hover:bg-zinc-600 text-white px-4 py-2 rounded-lg transition"
