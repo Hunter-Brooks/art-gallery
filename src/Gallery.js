@@ -35,7 +35,7 @@ export default function Gallery() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selected, artworks.length]);
 
-  //const currentArtwork = selected !== null ? artworks[selected] : null;
+  const currentArtwork = selected !== null ? artworks[selected] : null;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-100 text-white flex flex-col items-center p-6">
@@ -66,12 +66,13 @@ export default function Gallery() {
           <motion.div
             key={i}
             whileHover={{ scale: 1.03 }}
-            onClick={() => setSelected(art)}
+            onClick={() => setSelected(i)}
           >
             <div className="overflow-hidden bg-zinc-800 cursor-pointer hover:shadow-xl transition-all rounded-2xl">
               <div className="p-0">
                 <img
                   src={art.image}
+                  //src={`${process.env.PUBLIC_URL}/art/${art.image}`}
                   alt={art.title}
                   className="w-full h-64 object-cover"
                 />
@@ -85,7 +86,7 @@ export default function Gallery() {
         ))}
       </div>
 
-      {selected && (
+      {selected !== null && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 p-6">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -93,12 +94,20 @@ export default function Gallery() {
             className="bg-zinc-900 rounded-2xl p-6 max-w-3xl w-full shadow-lg relative"
           >
             <img
-              src={process.env.PUBLIC_URL + selected.image}
-              alt={selected.title}
+              src={
+                currentArtwork
+                  ? process.env.PUBLIC_URL + currentArtwork.image
+                  : ""
+              }
+              alt={currentArtwork ? currentArtwork.title : ""}
               className="w-full h-[70vh] object-contain rounded-xl mb-4"
             />
-            <h2 className="text-2xl font-semibold mb-2">{selected.title}</h2>
-            <p className="text-zinc-400 mb-4">{selected.description}</p>
+            <h2 className="text-2xl font-semibold mb-2">
+              {currentArtwork ? currentArtwork.title : ""}
+            </h2>
+            <p className="text-zinc-400 mb-4">
+              {currentArtwork ? currentArtwork.description : ""}
+            </p>
             <button
               onClick={() => setSelected(null)}
               className="mt-2 bg-zinc-700 hover:bg-zinc-600 text-white px-4 py-2 rounded-lg transition"
