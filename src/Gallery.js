@@ -94,11 +94,7 @@ export default function Gallery() {
             className="bg-zinc-900 rounded-2xl p-6 max-w-3xl w-full shadow-lg relative"
           >
             <img
-              src={
-                currentArtwork
-                  ? `./art/${currentArtwork.image}`
-                  : ""
-              }
+              src={currentArtwork ? `./art/${currentArtwork.image}` : ""}
               alt={currentArtwork ? currentArtwork.title : ""}
               className="w-full h-[70vh] object-contain rounded-xl mb-4"
             />
