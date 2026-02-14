@@ -71,7 +71,7 @@ export default function Gallery() {
             <div className="overflow-hidden bg-zinc-800 cursor-pointer hover:shadow-xl transition-all rounded-2xl">
               <div className="p-0">
                 <img
-                  src={art.image}
+                  src={`./art/${art.image}`}
                   //src={`${process.env.PUBLIC_URL}/art/${art.image}`}
                   alt={art.title}
                   className="w-full h-64 object-cover"
@@ -94,11 +94,7 @@ export default function Gallery() {
             className="bg-zinc-900 rounded-2xl p-6 max-w-3xl w-full shadow-lg relative"
           >
             <img
-              src={
-                currentArtwork
-                  ? process.env.PUBLIC_URL + currentArtwork.image
-                  : ""
-              }
+              src={currentArtwork ? `./art/${currentArtwork.image}` : ""}
               alt={currentArtwork ? currentArtwork.title : ""}
               className="w-full h-[70vh] object-contain rounded-xl mb-4"
             />
