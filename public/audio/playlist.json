@@ -1,0 +1,32 @@
+{
+  "tracks": [
+    {
+      "title": "I'm Not Okay (I Promise)",
+      "url": "/audio/My Chemical Romance - I'm Not Okay (I Promise) Lyric.mp3"
+    },
+    {
+      "title": "Freak On a Leash",
+      "url": "/audio/Korn - Freak On a Leash (Official HD Video).mp3"
+    },
+    {
+      "title": "Misery Business",
+      "url": "/audio/Paramore_ Misery Business [OFFICIAL VIDEO].mp3"
+    },
+    {
+      "title": "Chop Suey!",
+      "url": "/audio/System Of A Down - Chop Suey! (Official HD Video).mp3"
+    },
+    {
+      "title": "Toxicity",
+      "url": "/audio/System Of A Down - Toxicity (Official HD Video).mp3"
+    },
+    {
+      "title": "Cute Without the E",
+      "url": "/audio/Taking Back Sunday - Cute Without the _E_ (Cut From the Team).mp3"
+    },
+    {
+      "title": "Ocean Avenue",
+      "url": "/audio/Yellowcard - Ocean Avenue.mp3"
+    }
+  ]
+}
