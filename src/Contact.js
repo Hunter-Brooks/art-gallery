@@ -1,27 +1,35 @@
+// Contact page component for the art gallery
 import React, { useState } from "react";
 
+// Main Contact component
 export default function Contact() {
+  // State to hold form field values
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  // Handle input changes for all form fields
   function handleChange(e) {
     const { name, value } = e.target;
+    // Update the corresponding field in the form state
     setForm((prev) => ({ ...prev, [name]: value }));
   }
 
+  // Handle form submission
   function handleSubmit(e) {
-    e.preventDefault();
-    // Replace with real submit logic (API call, email service, etc.)
+    e.preventDefault(); // Prevent default form submission behavior
+    // Here you would add real submit logic (API call, email service, etc.)
     console.log("Contact form submitted:", form);
-    // optional: clear form after submit
+    // Optionally clear the form after submit
     setForm({ name: "", email: "", message: "" });
   }
 
+  // Render the contact page UI
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-100 text-white flex flex-col items-center p-6">
+      {/* Page header with navigation links */}
       <header className="w-full flex justify-between items-center p-4 border-b border-zinc-800">
         <h1 className="text-xl font-bold">Hunter Brooks Art</h1>
         <nav className="flex gap-4 text-zinc-400">
@@ -38,6 +46,7 @@ export default function Contact() {
       </header>
       <main className="contact-page">
         <h1>Contact</h1>
+        {/* Contact form for user input */}
         <form onSubmit={handleSubmit} className="contact-form" noValidate>
           <label htmlFor="name">
             Name

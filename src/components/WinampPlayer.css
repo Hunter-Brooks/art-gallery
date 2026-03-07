@@ -1,0 +1,97 @@
+.winamp-player-dimmed {
+  filter: grayscale(1) brightness(0.5);
+  opacity: 0.6;
+  pointer-events: none;
+}
+ .winamp-player {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 10;
+  width: 300px;
+  background: linear-gradient(180deg, #222 70%, #444 100%);
+  border: 2px solid #e0e0e0;
+  border-radius: 4px 4px 12px 12px;
+  box-shadow: 0 4px 24px #000a, 0 0 0 2px #111 inset;
+  font-family: 'Tahoma', 'Geneva', 'Verdana', 'Arial', sans-serif;
+  color: #e0e0e0;
+  user-select: none;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.winamp-ui {
+  padding: 0;
+}
+
+.winamp-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 0 #000, 0 0 2px #0ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.winamp-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.winamp-controls button {
+  background: linear-gradient(180deg, #333 60%, #111 100%);
+  border: 2px outset #b2b2b2;
+  color: #0ff;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  padding: 2px 12px;
+  cursor: pointer;
+  margin: 0 2px;
+  box-shadow: 0 2px 0 #0008;
+  font-family: 'Consolas', 'Courier New', monospace;
+  text-shadow: 0 1px 0 #000, 0 0 2px #0ff;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.winamp-controls button:hover {
+  background: #0ff;
+  color: #111;
+  border-color: #0ff;
+}
+
+.winamp-topbar {
+  background: linear-gradient(90deg, #444 60%, #222 100%);
+  border-bottom: 2px solid #111;
+  padding: 4px 10px 2px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.winamp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  background: #f33;
+  box-shadow: 12px 0 0 #fc3, 24px 0 0 #3f3;
+}
+
+.winamp-screen {
+  background: linear-gradient(90deg, #0a0f1a 80%, #1a1f2a 100%);
+  border: 2px inset #0ff;
+  color: #0ff;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.95rem;
+  padding: 8px 12px 6px 12px;
+  margin: 0 10px 8px 10px;
+  border-radius: 3px;
+  text-align: left;
+  min-height: 28px;
+  box-shadow: 0 0 8px #0ff4 inset;
+}
