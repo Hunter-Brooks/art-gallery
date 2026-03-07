@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './components/Starfield.css';
+@import "./components/Starfield.css";
 
 body {
   background: transparent !important;

@@ -3,7 +3,7 @@
   opacity: 0.6;
   pointer-events: none;
 }
- .winamp-player {
+.winamp-player {
   position: absolute;
   bottom: 16px;
   left: 16px;
@@ -12,8 +12,10 @@
   background: linear-gradient(180deg, #222 70%, #444 100%);
   border: 2px solid #e0e0e0;
   border-radius: 4px 4px 12px 12px;
-  box-shadow: 0 4px 24px #000a, 0 0 0 2px #111 inset;
-  font-family: 'Tahoma', 'Geneva', 'Verdana', 'Arial', sans-serif;
+  box-shadow:
+    0 4px 24px #000a,
+    0 0 0 2px #111 inset;
+  font-family: "Tahoma", "Geneva", "Verdana", "Arial", sans-serif;
   color: #e0e0e0;
   user-select: none;
   pointer-events: auto;
@@ -28,7 +30,9 @@
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0;
-  text-shadow: 1px 1px 0 #000, 0 0 2px #0ff;
+  text-shadow:
+    1px 1px 0 #000,
+    0 0 2px #0ff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -52,9 +56,14 @@
   cursor: pointer;
   margin: 0 2px;
   box-shadow: 0 2px 0 #0008;
-  font-family: 'Consolas', 'Courier New', monospace;
-  text-shadow: 0 1px 0 #000, 0 0 2px #0ff;
-  transition: background 0.2s, color 0.2s, border 0.2s;
+  font-family: "Consolas", "Courier New", monospace;
+  text-shadow:
+    0 1px 0 #000,
+    0 0 2px #0ff;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border 0.2s;
 }
 
 .winamp-controls button:hover {
@@ -79,14 +88,16 @@
   display: inline-block;
   margin-right: 4px;
   background: #f33;
-  box-shadow: 12px 0 0 #fc3, 24px 0 0 #3f3;
+  box-shadow:
+    12px 0 0 #fc3,
+    24px 0 0 #3f3;
 }
 
 .winamp-screen {
   background: linear-gradient(90deg, #0a0f1a 80%, #1a1f2a 100%);
   border: 2px inset #0ff;
   color: #0ff;
-  font-family: 'Consolas', 'Courier New', monospace;
+  font-family: "Consolas", "Courier New", monospace;
   font-size: 0.95rem;
   padding: 8px 12px 6px 12px;
   margin: 0 10px 8px 10px;
