@@ -132,34 +132,36 @@ export default function Gallery({ setArtworkModalOpen }) {
   // Render the gallery UI
   return (
     <>
-      {/* Render fake ads for fun/decoration */}
+      {/* Render fake ads for  fun/decora"ion" */}
       <FakeAds />
       <div
-        className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-100 text-white flex flex-col items-center p-6 vista-scrollbar"
+        className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-100 text-white flex flex-col items-center pt-0 pb-6 vista-scrollbar"
         style={{ cursor: 'url("./images/pixel-cat.png") 16 16, auto' }}
       >
-        {/* Secret button: click to spawn a cat animation (easter egg) */}
-        <div
-          onClick={spawnCat}
-          className="fixed bottom-2 right-2 w-16 h-16 bg-red-500 opacity-100 cursor-pointer z-50 flex items-center justify-center text-white font-bold"
-          title="secret cat trigger"
-        >
-          CAT
-        </div>
         {/* Header with site title and navigation links */}
         <header className="w-full flex justify-between items-center p-4 border-b border-zinc-800">
-          <h1 className="text-xl font-bold">Hunter Brooks Art</h1>
-          <nav className="flex gap-4 text-zinc-400">
-            <a href="gallery" className="hover:text-white">
-              Gallery
-            </a>
-            <a href="about" className="hover:text-white">
-              About
-            </a>
-            <a href="contact" className="hover:text-white">
-              Contact
-            </a>
-          </nav>
+          <div className="flex w-full justify-between items-center">
+            <div className="flex items-center gap-3">
+              <img
+                src={process.env.PUBLIC_URL + "/crab.png"}
+                alt="Crab"
+                className="w-20 h-20"
+                style={{ objectFit: "contain" }}
+              />
+              <h1 className="text-xl font-bold">Where memes become dreams</h1>
+            </div>
+            <nav className="flex gap-4 text-zinc-400">
+              <a href="gallery" className="hover:text-white">
+                Gallery
+              </a>
+              <a href="about" className="hover:text-white">
+                About
+              </a>
+              <a href="contact" className="hover:text-white">
+                Contact
+              </a>
+            </nav>
+          </div>
         </header>
         {/* Animated gallery title */}
         <motion.h1
@@ -167,7 +169,7 @@ export default function Gallery({ setArtworkModalOpen }) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Hunter Brooks Art Gallery
+          Pure Pareidolia
         </motion.h1>
 
         {/* Artwork grid: displays all artworks as cards, clicking opens modal */}
@@ -285,7 +287,7 @@ export default function Gallery({ setArtworkModalOpen }) {
         {/* Footer with copyright and icon */}
         <footer className="mt-12 text-zinc-500 text-sm flex items-center gap-2">
           <ImageIcon size={16} />
-          <span>© {new Date().getFullYear()} Hunter Brooks</span>
+          <span>© {new Date().getFullYear()} Hunter Brooks </span>
         </footer>
       </div>
     </>
