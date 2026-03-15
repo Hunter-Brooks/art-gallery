@@ -2,7 +2,7 @@
   {
     "title": "12th-Dimensional Checkers",
     "description": "A checkerboard within a checkerboard, spooky...",
-    "image": "1.PNG"
+    "image": "1.png"
   },
   {
     "title": "Spirit Bleed",
@@ -48,5 +48,55 @@
     "title": "Flossy Daydreams",
     "description": "Oops, all nightmares!",
     "image": "10.PNG"
+  },
+  {
+    "title": "You're next, kiddo",
+    "description": "You bouta' get stomped by the chungusman.",
+    "image": "11.PNG"
+  },
+  {
+    "title": "Alice vs. Predator",
+    "description": "What wonderous prey...",
+    "image": "12.PNG"
+  },
+  {
+    "title": "Sonic Psynergy",
+    "description": "*insert noise marine sounds here*",
+    "image": "13.PNG"
+  },
+  {
+    "title": "Fishy",
+    "description": "...Fishy.",
+    "image": "14.PNG"
+  },
+  {
+    "title": "South Street",
+    "description": "Only the best of glassware to be found here!",
+    "image": "15.PNG"
+  },
+  {
+    "title": "Viking Funeral",
+    "description": "Maybe Valhalla was the friends we made along the way.",
+    "image": "16.PNG"
+  },
+  {
+    "title": "The Crimson Chin",
+    "description": "'Justice, thy name is chin!'",
+    "image": "17.PNG"
+  },
+  {
+    "title": "Jade Eczema",
+    "description": "Farming on mars just got a lot less fun...!",
+    "image": "18.PNG"
+  },
+  {
+    "title": "Strut yo stuff!",
+    "description": "Large and in charge",
+    "image": "19.PNG"
+  },
+  {
+    "title": "The Gourd of a Thousand Truths",
+    "description": "How do you plant that which has no seed?",
+    "image": "20.PNG"
   }
 ]
