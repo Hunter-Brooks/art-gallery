@@ -181,8 +181,7 @@ export default function Gallery({ setArtworkModalOpen }) {
               <div className="overflow-hidden bg-zinc-800 cursor-pointer hover:shadow-xl transition-all rounded-2xl">
                 <div className="p-0">
                   <img
-                    src={`./art/${art.image}`}
-                    // src can be changed to PUBLIC_URL for deployment if needed
+                    src={`/art/${art.image}`}
                     alt={art.title}
                     className="w-full h-64 object-cover"
                   />
@@ -209,7 +208,7 @@ export default function Gallery({ setArtworkModalOpen }) {
               onClick={(e) => e.stopPropagation()} // Prevent modal close when clicking inside
             >
               <img
-                src={currentArtwork ? `./art/${currentArtwork.image}` : ""}
+                src={currentArtwork ? `/art/${currentArtwork.image}` : ""}
                 alt={currentArtwork ? currentArtwork.title : ""}
                 className="w-full h-[70vh] object-contain rounded-xl mb-4"
               />
