@@ -6,9 +6,15 @@ const About = () => {
       <header className="w-full flex justify-between items-center p-4 border-b border-zinc-800">
         <h1 className="text-xl font-bold">Hunter Brooks Art</h1>
         <nav className="flex gap-4 text-zinc-400">
-          <a href="gallery" className="hover:text-white">Gallery</a>
-          <a href="about" className="hover:text-white">About</a>
-          <a href="contact" className="hover:text-white">Contact</a>
+          <a href="gallery" className="hover:text-white">
+            Gallery
+          </a>
+          <a href="about" className="hover:text-white">
+            About
+          </a>
+          <a href="contact" className="hover:text-white">
+            Contact
+          </a>
         </nav>
       </header>
       <section className="flex flex-col items-center w-full mt-10">
