@@ -142,6 +142,7 @@ export default function Gallery({ setArtworkModalOpen }) {
         <header className="w-full flex justify-between items-center p-4 border-b border-zinc-800">
           <div className="flex w-full justify-between items-center">
             <div className="flex items-center gap-3">
+              {/* crab */}
               <img
                 src={process.env.PUBLIC_URL + "/crab.png"}
                 alt="Crab"
