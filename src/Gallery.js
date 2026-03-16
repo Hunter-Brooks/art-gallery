@@ -142,6 +142,7 @@ export default function Gallery({ setArtworkModalOpen }) {
         <header className="w-full flex justify-between items-center p-4 border-b border-zinc-800">
           <div className="flex w-full justify-between items-center">
             <div className="flex items-center gap-3">
+              {/* crab */}
               <img
                 src={process.env.PUBLIC_URL + "/crab.png"}
                 alt="Crab"
@@ -171,6 +172,8 @@ export default function Gallery({ setArtworkModalOpen }) {
         >
           Pure Pareidolia
         </motion.h1>
+
+        {/* ...existing code... */}
 
         {/* Artwork grid: displays all artworks as cards, clicking opens modal */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
@@ -283,6 +286,15 @@ export default function Gallery({ setArtworkModalOpen }) {
             />
           );
         })}
+
+        {/* Cat button at the bottom of the page */}
+        <button
+          onClick={spawnCat}
+          className="mb-6 px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg shadow transition"
+          title="Summon Cat"
+        >
+          🐱 Cat
+        </button>
 
         {/* Footer with copyright and icon */}
         <footer className="mt-12 text-zinc-500 text-sm flex items-center gap-2">
