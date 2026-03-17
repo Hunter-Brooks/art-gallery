@@ -39,8 +39,8 @@ const About = () => {
             <br />
             The art on this site comes from a habit I’ve had for a long time:
             staring at random patterns until faces appear in them. Apparently
-            this is called warp psychosis. Personally I blame years of warp
-            travel and staring into starfields.
+            this is called warp psychosis. Personally I blame years of
+            interstellar travel and staring into starfields.
             <br />
             <br />
             A few things you should know about me: I built my first boltgun at
