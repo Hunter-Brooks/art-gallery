@@ -144,7 +144,7 @@ export default function Gallery({ setArtworkModalOpen }) {
             <div className="flex items-center gap-3">
               {/* crab */}
               <img
-                src={process.env.PUBLIC_URL + "/crab.png"}
+                src="/crab.png"
                 alt="Crab"
                 className="w-20 h-20"
                 style={{ objectFit: "contain" }}
